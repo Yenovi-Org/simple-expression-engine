@@ -1,0 +1,31 @@
+{
+  "name": "@tlprinting/expression-engine",
+  "version": "0.0.1",
+  "description": "Expression engine for dynamic variable evaluation with date arithmetic support",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "expression",
+    "parser",
+    "ast",
+    "date-arithmetic",
+    "template-variables"
+  ],
+  "author": "TLPrinting",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.17.31",
+    "typescript": "^5.8.3",
+    "vitest": "^2.1.8"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
