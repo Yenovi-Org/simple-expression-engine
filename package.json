@@ -1,13 +1,15 @@
 {
-  "name": "@tlprinting/expression-engine",
-  "version": "0.0.1",
+  "name": "simple-expression-engine",
+  "version": "0.0.2",
   "description": "Expression engine for dynamic variable evaluation with date arithmetic support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": "https://github.com/Yenovi-Org/simple-expression-engine",
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
+    "release": "pnpm install && pnpm build && pnpm changeset publish",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -17,10 +19,12 @@
     "date-arithmetic",
     "template-variables"
   ],
-  "author": "TLPrinting",
+  "author": "Kemenes Krisztian",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@types/node": "^20.17.31",
+    "@vitest/coverage-v8": "2.1.9",
     "typescript": "^5.8.3",
     "vitest": "^2.1.8"
   },

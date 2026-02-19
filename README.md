@@ -17,7 +17,7 @@ A robust expression engine for dynamic variable evaluation with date arithmetic 
 ## Installation
 
 ```bash
-npm install @tlprinting/label-expression-engine
+npm install simple-expression-engine
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ npm install @tlprinting/label-expression-engine
 ### Basic Example
 
 ```typescript
-import { ExpressionEngine } from '@tlprinting/label-expression-engine'
+import { ExpressionEngine } from 'simple-expression-engine'
 
 const engine = new ExpressionEngine()
 
@@ -180,7 +180,7 @@ const engine = new ExpressionEngine({
 ### Field-Level Error Tracking
 
 ```typescript
-import { parse, evaluate } from '@tlprinting/label-expression-engine'
+import { parse, evaluate } from 'simple-expression-engine'
 
 const parseResult = parse('MY_DATE + 2 days')
 if (parseResult.success) {
@@ -201,7 +201,7 @@ if (parseResult.success) {
 For advanced use cases, use the low-level parser and evaluator:
 
 ```typescript
-import { parse, evaluate } from '@tlprinting/label-expression-engine'
+import { parse, evaluate } from 'simple-expression-engine'
 
 // Parse expression to AST
 const parseResult = parse('MY_DATE + 2 days')
@@ -275,7 +275,7 @@ import type {
   EvaluationError,
   TimeUnit,
   Operator
-} from '@tlprinting/label-expression-engine'
+} from 'simple-expression-engine'
 ```
 
 ## License
