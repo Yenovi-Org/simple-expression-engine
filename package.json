@@ -1,6 +1,6 @@
 {
   "name": "simple-expression-engine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Expression engine for dynamic variable evaluation with date arithmetic support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
